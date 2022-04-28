@@ -1,6 +1,7 @@
 /** ----- Imports ----- **/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
 
+/** pc-tablet **/
 @media (min-width: 800px) {
   /** header **/
   header {
@@ -33,6 +34,7 @@
       }
     }
   }
+
   /** Logo **/
   nav label {
     a:link,
@@ -43,6 +45,7 @@
       font-size: 15px;
     }
   }
+
   /** :hover **/
   nav ul a {
     position: relative;
@@ -88,6 +91,6 @@
     color: #011c50;
   }
 }
-
+/** movil **/
 @media (min-width: 176px) {
 }
