@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/parciales/menu/_menu.scss",
+        "../scss/parciales/_index.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
