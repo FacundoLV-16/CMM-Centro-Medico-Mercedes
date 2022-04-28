@@ -1,0 +1,90 @@
+/** ----- Imports ----- **/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
+
+@media (min-width: 600px) {
+  /** header **/
+  header {
+    width: 100%;
+    background-color: hsl(49, 51%, 87%);
+    border-bottom: 2px solid #011c50;
+    font-family: "Playfair Display", serif;
+
+    /** menu **/
+    nav {
+      padding: 10px;
+      height: 50px;
+      width: 100%;
+      ul {
+        margin-right: 10px;
+        float: right;
+        li {
+          display: inline-block;
+          margin: 0 8px;
+          line-height: 10px;
+          a:link,
+          a:visited,
+          a:active {
+            text-decoration: none;
+            color: #011c50;
+            font-size: 15px;
+          }
+        }
+        list-style: none;
+      }
+    }
+  }
+  /** Logo **/
+  nav label {
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: #011c50;
+      font-size: 15px;
+    }
+  }
+  /** :hover **/
+  nav ul a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+  }
+
+  nav ul a::before,
+  nav ul a::after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
+  }
+
+  nav ul a::before {
+    content: "";
+    right: -5px;
+    top: 0px;
+    border-top: 3px solid #011c50;
+    border-right: 3px solid #011c50;
+    transform: translate(-100%, 50%);
+  }
+
+  nav ul a:after {
+    content: "";
+    left: -5px;
+    bottom: -3px;
+    border-bottom: 3px solid #011c50;
+    border-left: 3px solid #011c50;
+    transform: translate(100%, -50%);
+  }
+
+  nav ul a:hover:before,
+  nav ul a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  nav ul a:hover {
+    color: #011c50;
+  }
+}
