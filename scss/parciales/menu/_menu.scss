@@ -9,6 +9,13 @@
     background-color: hsl(49, 51%, 87%);
     border-bottom: 2px solid #011c50;
     font-family: "Playfair Display", serif;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 100px;
+    div {
+      display: none;
+    }
 
     /** menu **/
     nav {
@@ -20,7 +27,7 @@
         float: right;
         li {
           display: inline-block;
-          margin: 0 8px;
+          margin: 0 15px;
           line-height: 10px;
           a:link,
           a:visited,
@@ -34,6 +41,9 @@
       }
     }
   }
+  main {
+    margin-top: 50px;
+  }
 
   /** Logo **/
   nav label {
@@ -42,7 +52,11 @@
     a:active {
       text-decoration: none;
       color: #011c50;
-      font-size: 15px;
+      font-size: 14px;
+    }
+    :hover {
+      box-shadow: 0px 2px 0px 0px rgb(8, 8, 8);
+      transition: 400ms;
     }
   }
 
@@ -65,8 +79,8 @@
 
   nav ul a::before {
     content: "";
-    right: -5px;
-    top: 0px;
+    right: -10px;
+    top: -5px;
     border-top: 3px solid #011c50;
     border-right: 3px solid #011c50;
     transform: translate(-100%, 50%);
@@ -74,8 +88,8 @@
 
   nav ul a:after {
     content: "";
-    left: -5px;
-    bottom: -3px;
+    left: -10px;
+    bottom: -6px;
     border-bottom: 3px solid #011c50;
     border-left: 3px solid #011c50;
     transform: translate(100%, -50%);
@@ -92,5 +106,129 @@
   }
 }
 /** movil **/
-@media (min-width: 176px) {
+@media (min-width: 360px) and (max-width: 414px) {
+  /** header **/
+  header {
+    width: 100%;
+    background-color: hsl(49, 51%, 87%);
+    border-bottom: 2px solid #011c50;
+    font-family: "Playfair Display", serif;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 100px;
+
+    /** menu **/
+    nav {
+      padding: 10px;
+      height: 50px;
+      width: 100%;
+      ul {
+        display: none;
+      }
+    }
+  }
+  main {
+    margin-top: 50px;
+  }
+
+  /** Menu Hamburguesa **/
+
+  .grid-header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr 1fr) 50%;
+    grid-template-areas: "logo menu";
+  }
+
+  .btn__menu {
+    grid-area: menu;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+  }
+  .btn__menu:hover {
+    background-color: #7fa4e9;
+  }
+
+  /** Logo **/
+  nav label {
+    grid-area: logo;
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: #011c50;
+      font-size: 16px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 360px) {
+  /** header **/
+  header {
+    width: 100%;
+    background-color: hsl(49, 51%, 87%);
+    border-bottom: 2px solid #011c50;
+    font-family: "Playfair Display", serif;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 100px;
+
+    /** menu **/
+    nav {
+      padding: 10px;
+      height: 50px;
+      width: 100%;
+      ul {
+        display: none;
+      }
+    }
+  }
+  main {
+    margin-top: 50px;
+  }
+
+  /** Menu Hamburguesa **/
+
+  .grid-header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1fr 1fr) 50%;
+    grid-template-areas: "logo menu";
+  }
+
+  .btn__menu {
+    grid-area: menu;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+  }
+  .btn__menu:hover {
+    background-color: #7fa4e9;
+  }
+
+  /** Logo **/
+  nav label {
+    grid-area: logo;
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: #011c50;
+      font-size: 15px;
+    }
+  }
 }
