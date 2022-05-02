@@ -3,7 +3,7 @@ window.onscroll = function () {
 };
 
 function myFunction() {
-  if (document.documentElement.scrollTop > 10) {
+  if (document.documentElement.scrollTop > 1) {
     document.getElementById("header").className = "nav_mod";
   } else {
     document.getElementById("header").className = "";
