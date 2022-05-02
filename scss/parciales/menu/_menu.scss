@@ -2,255 +2,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
 
 /** pc-tablet **/
-@media (min-width: 800px) {
-  /** header **/
-  header {
-    width: 100%;
-    background-color: hsl(49, 51%, 87%);
-    border-bottom: 2px solid #011c50;
-    font-family: "Playfair Display", serif;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    z-index: 100px;
-    div {
-      display: none;
-    }
+header {
+  width: 100%;
+  height: 50px;
+  font-family: "Playfair Display", serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #efe9ce;
+  border-bottom: 2px solid #011c50;
+  transition: all 300ms;
 
-    /** menu **/
-    nav {
-      padding: 10px;
-      height: 50px;
-      width: 100%;
-      ul {
-        margin-right: 10px;
-        float: right;
-        li {
-          display: inline-block;
-          margin: 0 15px;
-          line-height: 10px;
-          a:link,
-          a:visited,
-          a:active {
-            text-decoration: none;
-            color: #011c50;
-            font-size: 15px;
-          }
-        }
-        list-style: none;
+  .container__header {
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+
+    /** Logo **/
+    .logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+        color: #011c50;
+        font-size: 14px;
+      }
+      :hover {
+        box-shadow: 0px 2px 0px 0px rgb(8, 8, 8);
+        transition: 400ms;
       }
     }
-  }
-  main {
-    margin-top: 50px;
-  }
-
-  /** Logo **/
-  nav label {
-    a:link,
-    a:visited,
-    a:active {
-      text-decoration: none;
-      color: #011c50;
-      font-size: 14px;
-    }
-    :hover {
-      box-shadow: 0px 2px 0px 0px rgb(8, 8, 8);
-      transition: 400ms;
-    }
-  }
-
-  /** :hover **/
-  nav ul a {
-    position: relative;
-    text-decoration: none;
-    font-family: "Playfair Display", serif;
-  }
-
-  nav ul a::before,
-  nav ul a::after {
-    content: "";
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    transition: all 0.35s ease;
-    opacity: 0;
-  }
-
-  nav ul a::before {
-    content: "";
-    right: -10px;
-    top: -5px;
-    border-top: 3px solid #011c50;
-    border-right: 3px solid #011c50;
-    transform: translate(-100%, 50%);
-  }
-
-  nav ul a:after {
-    content: "";
-    left: -10px;
-    bottom: -6px;
-    border-bottom: 3px solid #011c50;
-    border-left: 3px solid #011c50;
-    transform: translate(100%, -50%);
-  }
-
-  nav ul a:hover:before,
-  nav ul a:hover:after {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-
-  nav ul a:hover {
-    color: #011c50;
-  }
-}
-/** movil **/
-@media (min-width: 360px) and (max-width: 414px) {
-  /** header **/
-  header {
-    width: 100%;
-    background-color: hsl(49, 51%, 87%);
-    border-bottom: 2px solid #011c50;
-    font-family: "Playfair Display", serif;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    z-index: 100px;
-
-    /** menu **/
-    nav {
-      padding: 10px;
-      height: 50px;
-      width: 100%;
-      label {
-        height: 50px;
-        width: 100%;
-      }
-      ul {
-        display: none;
-        margin: -16px -120px 0px -10px;
-        background-color: red;
-        border-bottom: 2px solid #011c50;
-        border-right: 2px solid #011c50;
-        border-left: 2px solid #011c50;
-        li {
+    .container__nav {
+      position: relative;
+      height: 100%;
+      nav {
+        height: 100%;
+        ul {
+          height: 100%;
           display: flex;
-          margin: 0 15px;
-          line-height: 80px;
-          a:link,
-          a:visited,
-          a:active {
-            text-decoration: none;
-            color: #011c50;
-            font-size: 15px;
+          justify-content: center;
+          align-items: center;
+          li {
+            list-style: none;
+            a {
+              color: #011c50;
+              margin: 0px 20px;
+              position: relative;
+              text-decoration: none;
+            }
+            a:hover {
+              color: #011c50;
+            }
           }
         }
-        list-style: none;
+      }
+      /** :Hover **/
+      nav ul a::before,
+      nav ul a::after {
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all 0.35s ease;
+        opacity: 0;
+      }
+      nav ul a::before {
+        content: "";
+        right: -10px;
+        top: -5px;
+        border-top: 3px solid #011c50;
+        border-right: 3px solid #011c50;
+        transform: translate(-100%, 50%);
+      }
+
+      nav ul a:after {
+        content: "";
+        left: -10px;
+        bottom: -6px;
+        border-bottom: 3px solid #011c50;
+        border-left: 3px solid #011c50;
+        transform: translate(100%, -50%);
+      }
+      nav ul a:hover:before,
+      nav ul a:hover:after {
+        transform: translate(0, 0);
+        opacity: 1;
       }
     }
   }
-  main {
-    margin-top: 50px;
-  }
-
-  /** Menu Hamburguesa **/
-
-  .grid-header {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1fr 1fr) 50%;
-    grid-template-areas: "logo menu";
-  }
-
-  .btn__menu {
-    grid-area: menu;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background 300ms;
-  }
-  .btn__menu:hover {
-    background-color: #7fa4e9;
-  }
-
-  /** Logo **/
-  nav label {
-    grid-area: logo;
-    a:link,
-    a:visited,
-    a:active {
-      text-decoration: none;
-      color: #011c50;
-      font-size: 16px;
-    }
-  }
 }
-@media (min-width: 320px) and (max-width: 360px) {
-  /** header **/
-  header {
-    width: 100%;
-    background-color: hsl(49, 51%, 87%);
-    border-bottom: 2px solid #011c50;
-    font-family: "Playfair Display", serif;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    z-index: 100px;
 
-    /** menu **/
-    nav {
-      padding: 10px;
-      height: 50px;
-      width: 100%;
-      ul {
-        display: none;
-      }
-    }
-  }
-  main {
-    margin-top: 50px;
-  }
-
-  /** Menu Hamburguesa **/
-
-  .grid-header {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1fr 1fr) 50%;
-    grid-template-areas: "logo menu";
-  }
-
-  .btn__menu {
-    grid-area: menu;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background 300ms;
-  }
-  .btn__menu:hover {
-    background-color: #7fa4e9;
-  }
-
-  /** Logo **/
-  nav label {
-    grid-area: logo;
-    a:link,
-    a:visited,
-    a:active {
-      text-decoration: none;
-      color: #011c50;
-      font-size: 15px;
-    }
-  }
+.nav_mod {
+  height: 20px;
+  box-shadow: 1px 1px 10px 0px #00000010;
+  background-color: #efe9ce;
 }
+/** marin top 50px  **/
+.index-css {
+  margin-top: 50px;
+}
+.index-turnos-css {
+  margin-top: 50px;
+}
+
+.index-especialidades-css {
+  margin-top: 50px;
+}
+
+.index-contacto-css {
+  margin-top: 50px;
+}
+
+.index-login-css {
+  margin-top: 50px;
+}
+/** 
+window.onscroll = function () {
+  scroll = document.documentElement.scrollTop;
+
+  header = document.getElementById("header");
+
+  if (scroll > 1) {
+    header.classlist = "nav_mod";
+  } else if (scroll < 1) {
+    header.classlist = "";
+  }
+};
+**/
