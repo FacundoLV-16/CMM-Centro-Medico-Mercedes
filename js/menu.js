@@ -1,11 +1,11 @@
 window.onscroll = function () {
-  scroll = document.documentElement.scrollTop;
-
-  header = document.getElementById("header");
-
-  if (scroll > 1) {
-    header.classlist.add("nav_mod");
-  } else if (scroll < 1) {
-    header.classlist.remove("nav_mod");
-  }
+  myFunction();
 };
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 50) {
+    document.getElementById("header").className = "nav_mod_1";
+  } else {
+    document.getElementById("header").className = "nav_mod_2";
+  }
+}
