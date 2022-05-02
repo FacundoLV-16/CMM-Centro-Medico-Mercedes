@@ -4,7 +4,7 @@
 /** pc-tablet **/
 header {
   width: 100%;
-  height: 50px;
+  height: 100px;
   font-family: "Playfair Display", serif;
   position: fixed;
   top: 0;
@@ -100,39 +100,7 @@ header {
 }
 
 .nav_mod {
-  height: 20px;
+  height: 70px;
   box-shadow: 1px 1px 10px 0px #00000010;
   background-color: #efe9ce;
 }
-/** marin top 50px  **/
-.index-css {
-  margin-top: 50px;
-}
-.index-turnos-css {
-  margin-top: 50px;
-}
-
-.index-especialidades-css {
-  margin-top: 50px;
-}
-
-.index-contacto-css {
-  margin-top: 50px;
-}
-
-.index-login-css {
-  margin-top: 50px;
-}
-/** 
-window.onscroll = function () {
-  scroll = document.documentElement.scrollTop;
-
-  header = document.getElementById("header");
-
-  if (scroll > 1) {
-    header.classlist = "nav_mod";
-  } else if (scroll < 1) {
-    header.classlist = "";
-  }
-};
-**/
