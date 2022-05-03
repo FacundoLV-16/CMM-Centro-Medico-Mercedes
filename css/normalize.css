@@ -23,6 +23,9 @@ html {
 body {
   margin: 0;
   overflow-y: scroll;
+  background: #1e3c72;
+  background: -webkit-linear-gradient(to left, #2a5298, #1e3c72);
+  background: linear-gradient(to left, #2a5298, #1e3c72);
 }
 
 /**
