@@ -1,0 +1,18 @@
+-menu:
+ -habilitar con js el menu hamburguesa
+ -decenso del scroll
+
+-footer:
+ -
+
+-------------------
+
+-turnos:
+ -
+
+-index:
+ -foto y presentacion del la localidad
+ -pass de imgs de especialidades
+
+-especialidades:
+ -menu lateral con las especialidades
