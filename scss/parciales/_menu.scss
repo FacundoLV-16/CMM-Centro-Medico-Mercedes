@@ -1,4 +1,5 @@
 /** ----- Imports ----- **/
+@import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap");
 
 /**  pc-tablet  **/
@@ -12,8 +13,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -32,7 +33,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -54,14 +55,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -80,8 +81,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -89,8 +90,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -126,8 +127,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -146,7 +147,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -168,14 +169,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -194,8 +195,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -203,8 +204,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -240,8 +241,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -260,7 +261,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -282,14 +283,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -308,8 +309,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -317,8 +318,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -354,8 +355,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -374,7 +375,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -396,14 +397,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -422,8 +423,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -431,8 +432,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -468,8 +469,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -488,7 +489,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -510,14 +511,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -536,8 +537,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -545,8 +546,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -582,8 +583,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -602,7 +603,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -624,14 +625,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -650,8 +651,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -659,8 +660,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -696,8 +697,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -716,7 +717,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -738,14 +739,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 20px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -764,8 +765,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -773,8 +774,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -810,8 +811,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -830,7 +831,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 20px;
         }
         :hover {
@@ -852,14 +853,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 15px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -878,8 +879,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -887,8 +888,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -924,8 +925,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -944,7 +945,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 14px;
         }
         :hover {
@@ -966,14 +967,14 @@
             li {
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 15px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -992,8 +993,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -1001,8 +1002,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
@@ -1039,8 +1040,8 @@
     top: 0;
     right: 0;
     z-index: 100;
-    background-color: #efe9ce;
-    border-bottom: 2px solid #011c50;
+    background-color: $fondo-menu;
+    border-bottom: 2px solid $detalles-menu;
 
     .container__header {
       max-width: 1200px;
@@ -1059,7 +1060,7 @@
         a:visited,
         a:active {
           text-decoration: none;
-          color: #011c50;
+          color: $detalles-menu;
           font-size: 16px;
         }
         :hover {
@@ -1076,7 +1077,7 @@
         height: 100%;
         nav {
           height: 100%;
-          background-color: #efe9ce;
+          background-color: $fondo-menu;
           position: fixed;
           top: 0;
           right: -300px;
@@ -1092,14 +1093,14 @@
               margin: 20px 0px;
               list-style: none;
               a {
-                color: #011c50;
+                color: $detalles-menu;
                 margin: 0px 20px;
                 position: relative;
                 text-decoration: none;
                 font-size: 15px;
               }
               a:hover {
-                color: #011c50;
+                color: $detalles-menu;
               }
             }
           }
@@ -1118,8 +1119,8 @@
           content: "";
           right: -10px;
           top: -5px;
-          border-top: 3px solid #011c50;
-          border-right: 3px solid #011c50;
+          border-top: 3px solid $detalles-menu;
+          border-right: 3px solid $detalles-menu;
           transform: translate(-100%, 50%);
         }
 
@@ -1127,8 +1128,8 @@
           content: "";
           left: -10px;
           bottom: -6px;
-          border-bottom: 3px solid #011c50;
-          border-left: 3px solid #011c50;
+          border-bottom: 3px solid $detalles-menu;
+          border-left: 3px solid $detalles-menu;
           transform: translate(100%, -50%);
         }
         nav ul a:hover:before,
