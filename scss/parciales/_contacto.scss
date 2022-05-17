@@ -17,7 +17,7 @@
 
 .titulo {
   background-color: #efe9ce;
-  border: 2px solid #011c50;
+  border: 3px solid #011c50;
   grid-area: titulo;
   display: grid;
   grid-template-areas:
@@ -48,15 +48,14 @@
 
   .formulario {
     grid-area: formulario;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .form-formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .maps {
     grid-area: maps;
   }
-}
-.mapa-setting {
-  width: 100%;
 }
