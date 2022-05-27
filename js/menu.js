@@ -1,18 +1,18 @@
-/**     scroll     **/
+/** scrool **/
 
 window.onscroll = function () {
   scroll = document.documentElement.scrollTop;
 
   header = document.getElementById("header");
 
-  if (scroll > 10) {
+  if (scroll > 5) {
     header.classList.add("nav_mod");
-  } else if (scroll < 10) {
+  } else if (scroll < 5) {
     header.classList.remove("nav_mod");
   }
 };
 
-/**     menu hamburguesa     **/
+/** btn hamburguesa **/
 
 document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
 
