@@ -1,61 +1,7 @@
-.conteiner__all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.div__grid {
-  width: 100%;
-  background-color: #487bdb;
-  border: 2px solid #efe9ce;
-  display: grid;
-  grid-template-areas:
-    "titulo titulo titulo titulo"
-    "formulario formulario maps maps"
-    "formulario formulario maps maps";
-}
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@1,900&display=swap");
+@include contacto_config_movil();
 
-.titulo {
-  background-color: #efe9ce;
-  border: 3px solid #011c50;
-  grid-area: titulo;
-  display: grid;
-  grid-template-areas:
-    "h2 h2"
-    "direccion contacto";
-
-  .h2 {
-    grid-area: h2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  .direccion {
-    grid-area: direccion;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contacto {
-    grid-area: contacto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .formulario {
-    grid-area: formulario;
-    .form-formulario {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  .maps {
-    grid-area: maps;
-  }
+@media screen and (min-width: 769px) {
+  @include contacto_config();
 }

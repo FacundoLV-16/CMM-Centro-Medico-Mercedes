@@ -32,7 +32,7 @@
         &:active {
           text-decoration: none;
           color: map-get($color, "azul");
-          font-size: 1.1875rem;
+          font-size: 4vmin;
         }
       }
     }
@@ -148,7 +148,7 @@
         &:active {
           text-decoration: none;
           color: map-get($color, "azul");
-          font-size: 1.1875rem;
+          font-size: 1.25rem;
         }
       }
     }
@@ -216,6 +216,217 @@
     }
     .btn__menu {
       display: none;
+    }
+  }
+}
+
+@mixin contacto_config_movil() {
+  main {
+    font-family: "Playfair Display", serif;
+    padding: 1.5em;
+  }
+
+  .conteiner__all {
+    box-sizing: border-box;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1em;
+    background-color: map-get($color, "crema");
+    box-shadow: 0 0 20px 0 map-get($color, "luz");
+  }
+
+  .contact-form {
+    padding: 1em;
+
+    h3 {
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(4, 25%);
+      grid-template-areas:
+        "block-1 block-2"
+        "block-3 block-4"
+        "block-5 block-5"
+        "block-6 block-6";
+    }
+
+    .block-1 {
+      grid-area: block-1;
+    }
+
+    .block-2 {
+      grid-area: block-2;
+    }
+
+    .block-3 {
+      grid-area: block-3;
+    }
+
+    .block-4 {
+      grid-area: block-4;
+    }
+
+    .block-5 {
+      grid-area: block-5;
+      margin-bottom: 130px;
+    }
+
+    .block-6 {
+      grid-area: block-6;
+    }
+
+    form p {
+      margin: 0;
+      padding: 0.7em;
+      button,
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.7em;
+        border: none;
+        background: none;
+        outline: 0;
+        border-bottom: 1px solid map-get($color, "azul");
+      }
+      button {
+        border: 5px solid map-get($color, "azul");
+        padding: 1em;
+        &:hover,
+        :focus {
+          transition: background-color 300ms ease-out;
+          background-color: map-get($color, "mar");
+          outline: 0;
+          color: map-get($color, "crema");
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    padding: 1em;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 0.2em;
+      }
+    }
+
+    p {
+      margin: 0 0 1rem 0;
+    }
+  }
+}
+
+@mixin contacto_config() {
+  main {
+    font-family: "Playfair Display", serif;
+    padding: 1.5em;
+  }
+
+  .conteiner__all {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1em;
+    background-color: map-get($color, "crema");
+    box-shadow: 0 0 20px 0 map-get($color, "luz");
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-form {
+    padding: 1em;
+
+    h3 {
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(4, 25%);
+      grid-template-areas:
+        "block-1 block-2"
+        "block-3 block-4"
+        "block-5 block-5"
+        "block-6 block-6";
+    }
+
+    .block-1 {
+      grid-area: block-1;
+    }
+
+    .block-2 {
+      grid-area: block-2;
+    }
+
+    .block-3 {
+      grid-area: block-3;
+    }
+
+    .block-4 {
+      grid-area: block-4;
+    }
+
+    .block-5 {
+      grid-area: block-5;
+      margin-bottom: 130px;
+    }
+
+    .block-6 {
+      grid-area: block-6;
+    }
+
+    form p {
+      margin: 0;
+      padding: 0.7em;
+      button,
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.7em;
+        border: none;
+        background: none;
+        outline: 0;
+        border-bottom: 1px solid map-get($color, "azul");
+      }
+      button {
+        border: 5px solid map-get($color, "azul");
+        padding: 1em;
+        &:hover,
+        :focus {
+          transition: background-color 300ms ease-out;
+          background-color: map-get($color, "mar");
+          outline: 0;
+          color: map-get($color, "crema");
+        }
+      }
+    }
+  }
+
+  .contact-info {
+    background-color: map-get($color, "azul");
+    color: map-get($color, "blanco");
+    padding: 1em;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 0.2em;
+      }
+    }
+
+    p {
+      margin: 0 0 1rem 0;
     }
   }
 }
