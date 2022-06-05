@@ -13,6 +13,7 @@ PRIORIDADES
 
 -menu.scss: ❓
  *cambian font size de "a" de container__nav cuando menu hamburguesa ande❓
+ * js de scroll se rompe con el :hover, agregar hover al js
 -login ❓
  * acomodar version tablet ( escribir tercer codigo para tablet?)❓
 
@@ -21,11 +22,10 @@ PRIORIDADES
 
 -especialidades ❗❗
  *submenu: .conteiner__submenu margin-L -800px a 0px para que aparesca
- * carrusel con especialidades y info de la gran variedad
- * pagina de proximamente
 
--turnos ❗❗
- *borrar y cambiar por pag de caediologia
+-error404 ❗❗
+
+
 
 -inicio ❗❗
 

@@ -468,6 +468,7 @@
 
 @mixin especialidades_config() {
   .conteiner__all__main {
+    margin-top: -90px;
     display: grid;
     grid-template-columns: 160px auto;
     padding: 1em;
@@ -479,22 +480,46 @@
         justify-content: center;
         align-items: center;
       }
+
+      .carousel_slide {
+        span {
+          color: map-get($color, "crema");
+          font-size: 20px;
+        }
+        .carousel-control-next,
+        .carousel-control-prev {
+          background-color: map-get($color, "azul");
+          opacity: 1;
+        }
+      }
     }
 
     .conteiner__submenu {
       margin-left: -30px;
-      background-color: aqua;
+      background-color: map-get($color, "azul");
       padding: 1em;
+      border: 2px solid map-get($color, "luz");
       ul {
         margin-left: -40px;
+
         list-style: none;
-        li a i {
-          font-size: 14px;
-          display: flex;
-          flex-direction: row;
-          h4 {
-            font-size: 20px;
-            margin-left: 10px;
+        li {
+          margin-top: 50px;
+          a {
+            text-decoration: none;
+            color: map-get($color, "crema");
+            &:hover {
+              color: map-get($color, "luz");
+            }
+            i {
+              font-size: 14px;
+              display: flex;
+              flex-direction: row;
+              h4 {
+                font-size: 20px;
+                margin-left: 10px;
+              }
+            }
           }
         }
       }
