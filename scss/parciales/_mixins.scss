@@ -1,3 +1,5 @@
+/** MENU **/
+
 @mixin menu_config_movil() {
   header {
     width: 100%;
@@ -114,6 +116,7 @@
     }
   }
 }
+
 @mixin menu_config() {
   header {
     width: 100%;
@@ -219,6 +222,8 @@
     }
   }
 }
+
+/** CONTACTO **/
 
 @mixin contacto_config_movil() {
   main {
@@ -455,6 +460,172 @@
       width: 100%;
       height: 100%;
       border: 0;
+    }
+  }
+}
+
+/** ESPECIALIDADES **/
+
+@mixin especialidades_config() {
+  .conteiner__all__main {
+    display: grid;
+    grid-template-columns: 160px auto;
+    padding: 1em;
+    .conteiner__main {
+      background-color: map-get($color, "crema");
+      padding: 1em;
+      .top_titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .conteiner__submenu {
+      margin-left: -30px;
+      background-color: aqua;
+      padding: 1em;
+      ul {
+        margin-left: -40px;
+        list-style: none;
+        li a i {
+          font-size: 14px;
+          display: flex;
+          flex-direction: row;
+          h4 {
+            font-size: 20px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .btn__submenu {
+    display: none;
+  }
+}
+
+@mixin especialidades_config__tablet() {
+  .conteiner__all__main {
+    padding: 1em;
+    .conteiner__main {
+      width: 99%;
+      height: 100%;
+      background-color: map-get($color, "crema");
+      padding: 1em;
+      .top_titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .conteiner__submenu {
+      width: 90%;
+      height: 90%;
+      margin-left: -800px;
+      background-color: aqua;
+      padding: 1em;
+      position: fixed;
+
+      ul {
+        margin-left: -40px;
+        list-style: none;
+        li a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          i {
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            h4 {
+              font-size: 20px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .btn__submenu {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: background 300ms;
+      display: flex;
+      &:hover {
+        background-color: #b1a9a97a;
+      }
+    }
+  }
+}
+
+@mixin especialidades_config__movil() {
+  .conteiner__all__main {
+    padding: 1em;
+    .conteiner__main {
+      width: 100%;
+      height: 100%;
+      background-color: map-get($color, "crema");
+      padding: 1em;
+      .top_titulo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        h3 {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .conteiner__submenu {
+      width: 83%;
+      height: 100%;
+      margin-left: -800px;
+      background-color: aqua;
+      padding: 1em;
+      position: fixed;
+
+      ul {
+        margin-left: -40px;
+        list-style: none;
+        li a {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          i {
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            h4 {
+              font-size: 20px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .btn__submenu {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: background 300ms;
+      display: flex;
+      &:hover {
+        background-color: #b1a9a97a;
+      }
     }
   }
 }

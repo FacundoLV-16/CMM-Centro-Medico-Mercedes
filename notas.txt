@@ -11,22 +11,27 @@ PRIORIDADES
 -faltante ❌
 ----------------------
 
--menu.scss:
+-menu.scss: ❓
  *cambian font size de "a" de container__nav cuando menu hamburguesa ande❓
--login
+-login ❓
  * acomodar version tablet ( escribir tercer codigo para tablet?)❓
 
--contacto ❗❗
- * falta arreglar "Mas Informacion"
- * agregar mapa
+-contacto ❓
+ *cambir info de mas Informacion y agregar whats mas su boton
 
 -especialidades ❗❗
+ *submenu: .conteiner__submenu margin-L -800px a 0px para que aparesca
+ * carrusel con especialidades y info de la gran variedad
+ * pagina de proximamente
 
 -turnos ❗❗
+ *borrar y cambiar por pag de caediologia
 
 -inicio ❗❗
 
--metas / descripcion
+-metas / descripcion ❗❗
+-acomodar scss directorio
+-hacer presupuesto 
 ---
 
 *mixins speedwork

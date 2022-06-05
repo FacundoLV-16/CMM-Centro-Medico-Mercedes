@@ -1,5 +1,6 @@
 @import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@1,900&display=swap");
+
 @include contacto_config_movil();
 
 @media screen and (min-width: 769px) {

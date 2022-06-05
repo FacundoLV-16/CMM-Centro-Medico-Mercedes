@@ -1,0 +1,14 @@
+/**  pc-tablet  **/
+@media screen and (min-width: 769px) {
+  @include especialidades_config();
+}
+
+/**  menu movil  **/
+@media screen and (max-width: 768px) {
+  @include especialidades_config__tablet();
+}
+
+/**  menu movil  **/
+@media screen and (max-width: 425px) {
+  @include especialidades_config__movil();
+}
