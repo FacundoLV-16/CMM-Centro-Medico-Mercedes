@@ -13,6 +13,7 @@ window.onscroll = function () {
 };
 
 /** btn hamburguesa **/
+/** reparar **/
 
 document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
 
