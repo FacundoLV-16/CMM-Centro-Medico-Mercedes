@@ -1,0 +1,67 @@
+/** pc **/
+@media screen and (min-width: 769px) {
+  .div_main {
+    margin-top: -100px;
+    background-image: url("/multimedia/img/portada.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    padding: 1em;
+    box-shadow: 0 0 20px 0 map-get($color, "luz");
+    h1 {
+      color: map-get($color, "azul");
+      font-size: 40px;
+    }
+    h3 {
+      color: map-get($color, "azul");
+      margin-top: 370px;
+      margin-left: 80px;
+      font-size: 27px;
+    }
+  }
+}
+
+/** tablet **/
+@media screen and (max-width: 768px) {
+  .div_main {
+    background-image: url("/multimedia/img/portada.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    padding: 1em;
+    box-shadow: 0 0 20px 0 map-get($color, "luz");
+    h1 {
+      color: map-get($color, "azul");
+      font-size: 34px;
+    }
+    h3 {
+      color: map-get($color, "azul");
+      margin-top: 340px;
+      font-size: 23px;
+    }
+  }
+}
+
+/** movil  **/
+@media screen and (max-width: 425px) {
+  .div_main {
+    background-image: url("/multimedia/img/portada.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    padding: 1em;
+    box-shadow: 0 0 20px 0 map-get($color, "luz");
+    h1 {
+      color: map-get($color, "azul");
+      font-size: 31px;
+    }
+    h3 {
+      color: map-get($color, "azul");
+      margin-top: 300px;
+      font-size: 20px;
+    }
+  }
+}

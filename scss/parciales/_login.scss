@@ -6,6 +6,7 @@ main {
   padding: 20px;
   margin: auto;
   margin-top: 150px;
+  margin-bottom: 80px;
 }
 
 .contenedor__todo {
@@ -121,9 +122,42 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 850px) {
+/** tablet **/
+@media screen and (max-width: 768px) {
   main {
     margin-top: 50px;
+    margin-bottom: 180px;
+  }
+
+  .caja__trasera {
+    max-width: 350px;
+    height: 200px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .caja__trasera div {
+    margin: 0px;
+    position: absolute;
+  }
+
+  /*Formularios*/
+
+  .contenedor__login-register {
+    top: 150px;
+    left: -5px;
+    margin: auto;
+  }
+
+  .contenedor__login-register form {
+    position: relative;
+  }
+}
+/** movil **/
+@media screen and (max-width: 425px) {
+  main {
+    margin-top: 50px;
+    margin-bottom: 180px;
   }
 
   .caja__trasera {

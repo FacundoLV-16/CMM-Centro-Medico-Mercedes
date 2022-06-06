@@ -1,0 +1,29 @@
+.nav__header__404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-family: "playirfair display", serif;
+  }
+}
+
+.div__main__404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    color: map-get($color, "luz");
+    font-size: 100px;
+  }
+  input {
+    padding: 1em;
+    margin-top: 100px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  main h2 {
+    font-size: 80px;
+  }
+}
