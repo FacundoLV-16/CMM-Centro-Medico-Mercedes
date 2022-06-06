@@ -24,8 +24,8 @@ PRIORIDADES
  *submenu: .conteiner__submenu margin-L -800px a 0px para que aparesca
 
 
--acomodar scss directorio
--hacer presupuesto 
+-hacer presupuesto ❗
+
 ---
 
 *mixins speedwork
