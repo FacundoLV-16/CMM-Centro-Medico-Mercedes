@@ -26,6 +26,9 @@ PRIORIDADES
 
 -hacer presupuesto ❗
 
+-redes footer colocar label❗
+
+-cambiar imgs a svg❗
 ---
 
 *mixins speedwork
